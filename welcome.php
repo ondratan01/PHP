@@ -1,5 +1,5 @@
 <?php
-$border = 2;
+/*$border = 2;
 echo"<table border=$border>";
 for ($i = 0; $i <= 10; $i++) {
     echo "<tr>";
@@ -11,5 +11,17 @@ for ($i = 0; $i <= 10; $i++) {
     echo "</tr>";
 }
 echo "</table>";
+*/
+
+
+$slovo = $_GET["slovo"];
+$pocet = $_GET["pocet"];
+$pocet++;
+
+for($i=1;$i<$pocet;$i++)
+{
+    echo ("$i. $slovo");
+    echo ("<br>");
+}
 
 ?>
